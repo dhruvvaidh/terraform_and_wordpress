@@ -58,9 +58,9 @@ output "public_ip" {
 
 terraform {
   backend "s3" {
-    bucket         = "terraform-dv"  # Replace with your actual bucket name
-    key            = "terraform/state.tfstate"   # Path inside the bucket
-    region         = "us-east-1"                 # Replace with your AWS region
-    encrypt        = true                         # Encrypts the state file
+    bucket         = "terraform-dv"  
+    key            = "terraform/state.tfstate"   
+    region         = "us-east-1"                 
+    encrypt        = true                         
   }
 }
